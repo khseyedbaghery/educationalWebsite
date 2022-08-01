@@ -1,0 +1,174 @@
+body {
+    background: linear-gradient($color-first, $color-second) no-repeat;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.main {
+    //height: 100%;
+    width: 1000px;
+    //border: 2px solid black;
+
+}
+
+.header {
+    height: 150px;
+    display: flex;
+    direction: rtl;
+
+    background-color: $color-third;
+
+    &-socials {
+        margin-top: 38px;
+    }
+
+    &-logo-faradars {
+        height: 80px;
+        margin-top: 33px;
+        padding-top: 7px;
+        background-color: $color-white;
+    }
+
+    &-search {
+        position: relative;
+
+        .search-text {
+            margin-top: 60px;
+            width: 155px;
+            height: 27px;
+            padding-right: 8px;
+            font-family: $font-bkoodak;
+            font-size: 18px;
+            background-color: $color-black;
+            color: $color-white;
+            border: none;
+            border-left: 3px solid $color-white;
+            //text-align: center;
+
+        }
+
+        .search-btn {
+            width: 30px;
+            height: 27px;
+            position: absolute;
+            top: 60px;
+            left: -30px;
+            background-color: $color-orange;
+        }
+
+    }
+
+}
+
+// navbar style
+.navbar {
+    display: flex;
+    direction: rtl;
+    background-color: $color-yellow;
+    width: 100%;
+    height: 150px;
+    position: relative;
+
+    &-menu {
+        //margin-top: 40px;
+        font-family: $font-bmitra;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+
+    &-login {
+        display: flex;
+        margin-top: 50px;
+
+    }
+}
+
+//section1
+.section1 {
+    //width: 100%;
+    height: 400px;
+    background: url("../images/slider.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+//section2
+.section2 {
+    height: 500px;
+    background-color: $color-white;
+    position: relative;
+    //margin-top: -25px;
+}
+
+
+//section3
+.section3 {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    text-align: center;
+    background-color: $color-orange;
+}
+
+.footer {
+    height: 160px;
+    background-color: $color-dark;
+    
+
+    &-container {
+        width: 440px;
+        height: 100px;
+        padding-top: 35px;
+        direction: rtl;
+
+
+        &-list {
+            display: flex;
+            //  justify-content: center;
+            //  align-items: center;
+            list-style: none;
+            font-size: 25px;
+            font-family: $font-bmitra;
+
+        }
+
+        &-item {
+            border-left: 3px solid $color-white;
+            padding-left: 7px;
+            padding-right: 2px;
+
+            &:last-child{
+                border-left: none;
+            }
+            
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $color-orange;
+
+            &:hover{
+                color: $color-pink;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .copy{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        // font-weight: bold;
+        color: $color-white;
+    }
+}

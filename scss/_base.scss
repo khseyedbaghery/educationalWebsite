@@ -1,0 +1,64 @@
+//Color values
+$color-first : rgb(67, 55, 238);
+$color-second : rgb(160, 154, 247);
+$color-third : rgb(250, 120, 120);
+$color-black : #000;
+$color-dark : rgba(29, 27, 27, 0.856);
+$color-white : #fff;
+$color-yellow : rgb(243, 243, 34);
+$color-orange : rgb(201, 130, 0);
+$color-green :rgb(77, 218, 34);
+$color-gray : rgb(138, 134, 134);
+$color-pink : rgb(250, 84, 167);
+
+
+// Font Varable
+$font-bkoodak : "Bkoodak";
+$font-bmitra : "BMitra";
+
+@font-face {
+    font-family: "Bkoodak";
+    src: url("../font/BKoodkBd.eot") format('eot');
+    src: url("../font/BKoodkBd.ttf") format('ttf');
+    src: url("../font/BKoodkBd.woff") format('woff');
+}
+
+@font-face {
+    font-family: "BMitra";
+    src: url("../font/BMitra.eot") format('eot');
+    src: url("../font/BMitra.ttf") format('ttf');
+    src: url("../font/BMitra.woff") format('woff');
+}
+
+//mixin
+@mixin input-style() {
+    width: 175px;
+    height: 35px;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    text-align: center;
+    font-family: $font-bmitra;
+    font-size: 20px;
+    border: 2px solid $color-gray;
+    border-radius: 5px
+}
+
+@mixin kadr-section3() {
+    width: 250px;
+    height: 250px;
+    background-color: $color-green;
+    border: 2px solid $color-dark;
+    border-radius: 5px;   
+}
+
+@mixin btn-press($color1, $color2 : $color-black) {
+    width: 69px;
+    height: 43px;
+    background-color: $color1;
+    color: $color2;
+    text-align: center;
+    font-family: $font-bkoodak;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+}
